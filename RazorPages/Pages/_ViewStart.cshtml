@@ -1,0 +1,12 @@
+﻿@{
+    var routeUrl = ViewContext.RouteData.Values["Page"].ToString().ToLower();
+
+    if(routeUrl == "/index")
+    {
+        Layout = "_CustomLayout";
+    }
+    else
+    {
+        Layout = "_Layout";
+    }
+}
